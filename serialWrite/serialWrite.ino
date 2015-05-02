@@ -7,7 +7,7 @@ int inputs=4;
 
 byte val[4] = {0,0,0,0};
 int statePin = LOW;
-int THRESHOLD = 250;//IMPORTANT FOR SENSITIVITY
+int THRESHOLD = 100;//IMPORTANT FOR SENSITIVITY
 
 void setup() {
   pinMode(0, INPUT);//leftTre
@@ -41,7 +41,7 @@ for (int i=0;i<inputs;i++){
      break;
      }//end switch
 
- if(val[i] >= THRESHOLD){ //value read
+ if(val[i] >= THRESHOLD && val[i] != 255){ //value read
      hit = true;
      jsonString= jsonString + "\'" + key + "\': 1" ;
  }//endif
