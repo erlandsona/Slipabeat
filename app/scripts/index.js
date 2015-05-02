@@ -12,3 +12,24 @@ function onDeviceFound (devices) {
 }
 
 chrome.usb.getDevices({}, onDeviceFound);
+
+var bBD0000 = document.querySelector(".b-BD0000");
+var aBD0000 = document.querySelector(".a-BD0000");
+bBD0000.onclick = function() {
+  aBD0000.play();
+}
+var bOH00 = document.querySelector(".b-OH00");
+var aOH00 = document.querySelector(".a-OH00");
+bOH00.onclick = function() {
+  aOH00.play()
+}
+var bCH = document.querySelector(".b-CH");
+var aCH = document.querySelector(".a-CH");
+bCH.onclick = function() {
+  aCH.play();
+}
+var bSD0000 = document.querySelector(".b-SD0000");
+var aSD0000 = document.querySelector(".a-SD0000");
+bSD0000.onclick = function() {
+  aSD0000.play();
+}
