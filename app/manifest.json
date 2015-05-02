@@ -7,6 +7,14 @@
   	"permissions": [
   		"serial",
   		"usb",
+      {
+        "usbDevices": [
+          {
+            "vendorId": 7992,
+            "productId": 30
+          }
+        ]
+      },
   		"<all_urls>"
   	],
   	"icons": {
