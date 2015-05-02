@@ -33,3 +33,14 @@ var aSD0000 = document.querySelector(".a-SD0000");
 bSD0000.onclick = function() {
   aSD0000.play();
 }
+
+function setRightHeel() {
+  var file = "TR808WAV/" + document.querySelector("#right-heel").value;
+  console.log(file);
+  document.querySelector("#right-heel-sound").src = file;
+}
+
+var leftToeSound =  document.querySelector("#left-toe-sound")
+var leftHeelSound =  document.querySelector("#left-heel-sound")
+var rightToeSound =  document.querySelector("#right-toe-sound")
+var rightHeelSound =  document.querySelector("#right-heel-sound")

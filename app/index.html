@@ -15,6 +15,61 @@
     </head>
     <body>
         <h1>Hey yo!</h1>
+
+        <div class="controller1">
+          <div class="row">
+        <h1>Controller 1</h1>
+        <select>
+          <option>Preset 1</option>
+          <option>Preset 2</option>
+          <option>Preset 3</option>
+          <option>Preset 4</option>
+        </select>
+      </div>
+      <div class="row">
+        <h2>LEFT</h2>
+        <h2>RIGHT</h2>
+      </div>
+      <div class="row">
+        <label for="left-toe">Toe</label>
+        <select id="left-toe">
+          <option>Snare Drum 0000</option>
+          <option>Snare Drum 0001</option>
+          <option>Snare Drum 0002</option>
+          <option>Snare Drum 0003</option>
+        </select>
+        <label for="right-toe">Toe</label>
+        <select id="right-toe">
+          <option>Open Hat 00</option>
+          <option>Open Hat 10</option>
+          <option>Open Hat 25</option>
+          <option>Open Hat 50</option>
+          <option>Open Hat 70</option>
+        </select>
+      </div>
+      <div class="row">
+        <label for="left-heel">Heel</label>
+        <select id="left-heel">
+          <option>Bass Drum 0000</option>
+          <option>Bass Drum 0001</option>
+          <option>Bass Drum 0002</option>
+          <option>Bass Drum 0003</option>
+        </select>
+        <label for="right-heel">Heel</label>
+        <select onchange="setRightHeel()" id="right-heel">
+          <option value="CH/CH.wav">Closed Hat</option>
+          <option value="/CP/CP.wav">Clap</option>
+          <option>Cowbell</option>
+          <option>YEaaaaaahhhhh</option>
+        </select>
+      </div>
+      <audio id="left-toe-sound" type = "audio/wav" controls /></audio>
+      <audio id="left-heel-sound" type = "audio/wav" controls /></audio>
+      <audio id="right-toe-sound" type = "audio/wav" controls /></audio>
+      <audio id="right-heel-sound" type = "audio/wav" controls /></audio>
+    </div>
+
+<!--
         <button class="b-BD0000">Bass Drum 0000</button>
         <audio class="a-BD0000">
           <source src="/TR808WAV/BD/BD0000.wav" type="audio/wav"/>
@@ -31,6 +86,7 @@
         <audio class="a-SD0000">
           <source src="/TR808WAV/SD/SD0000.wav" type="audio/wav"/>
         </audio>
+-->
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <!-- endbower -->
