@@ -7,6 +7,7 @@
 var LIVERELOAD_HOST = 'localhost:';
 var LIVERELOAD_PORT = 35729;
 var connection = new WebSocket('ws://' + LIVERELOAD_HOST + LIVERELOAD_PORT + '/livereload');
+delete connection.URL;
 
 connection.onerror = function (error) {
   console.log('reload connection got error' + JSON.stringify(error));
