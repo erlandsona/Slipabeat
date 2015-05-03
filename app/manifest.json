@@ -18,8 +18,8 @@
   		"<all_urls>"
   	],
   	"icons": {
-  		"16": "assets/images/icon-16.png",
-  		"128": "assets/images/icon-128.png"
+  		"16": "assets/images/slipabeat-icon.png",
+  		"128": "assets/images/slipabeat-icon.png"
   	},
   	"app": {
   		"background": {

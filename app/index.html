@@ -15,66 +15,236 @@
   </head>
   <body>
     <header>
-      <img src="assets/images/slipabeat-icon.svg" alt="Slip-A-Beat Logo" >
+      <img src="assets/images/slipabeat-logo.svg" alt="Slip-A-Beat Logo">
     </header>
 
     <main>
       <div class="controller1">
-        <div class="row">
+        <div class="row"id="top-row">
           <h1>Controller 1</h1>
-          <!--  <select disabled>
-            <option>Preset 1</option>
-            <option>Preset 2</option>
-            <option>Preset 3</option>
-            <option>Preset 4</option>
-            </select>-->
+          <div class="green-dot"></div>
+            <!--<select disabled>-->
+              <!--<option>Preset 1</option>-->
+              <!--<option>Preset 2</option>-->
+              <!--<option>Preset 3</option>-->
+              <!--<option>Preset 4</option>-->
+            <!--</select>-->
         </div>
         <div class="row">
           <div class="left side">
             <h2>LEFT</h2>
+            <hr>
             <div class="input-group">
-              <label for="left-toe">Left Toe</label>
+              <label for="left-toe">Toe</label>
               <select id="left-toe">
-                <option value="SD/SD0000.wav">Snare Drum 0000</option>
-                <option value="SD/SD0010.wav">Snare Drum 0010</option>
-                <option value="SD/SD0025.wav">Snare Drum 0025</option>
-                <option value="SD/SD0050.wav">Snare Drum 0050</option>
+                <option value="BD/BD0000.wav">Bass Drum 1</option>
+                <option value="BD/BD0010.wav">Bass Drum 2</option>
+                <option value="BD/BD0025.wav">Bass Drum 3</option>
+                <option value="BD/BD0050.wav">Bass Drum 4</option>
+                <option value="CB/CB.wav">Cowbell</option>
+                <option value="CH/CH.wav">Closed High Hat</option>
+                <option value="CL/CL.wav">Clave</option>
+                <option value="CP/CP.wav">Clap</option>
+                <option value="CY/CY0000.wav">Cymbal 1</option>
+                <option value="CY/CY0010.wav">Cymbal 2</option>
+                <option value="CY/CY0025.wav">Cymbal 3</option>
+                <option value="CY/CY0050.wav">Cymbal 4</option>
+                <option value="HC/HC00.wav">High Conga 1</option>
+                <option value="HC/HC10.wav">High Conga 2</option>
+                <option value="HC/HC25.wav">High Conga 3</option>
+                <option value="HC/HC50.wav">High Conga 4</option>
+                <option value="HT/HT00.wav">High Tom Tom 1</option>
+                <option value="HT/HT10.wav">High Tom Tom 2</option>
+                <option value="HT/HT25.wav">High Tom Tom 3</option>
+                <option value="HT/HT50.wav">High Tom Tom 4</option>
+                <option value="LC/LC00.wav">Low Conga 1</option>
+                <option value="LC/LC10.wav">Low Conga 2</option>
+                <option value="LC/LC25.wav">Low Conga 3</option>
+                <option value="LC/LC50.wav">Low Conga 4</option>
+                <option value="LT/LT00.wav">Low Tom Tom 1</option>
+                <option value="LT/LT10.wav">Low Tom Tom 2</option>
+                <option value="LT/LT25.wav">Low Tom Tom 3</option>
+                <option value="LT/LT50.wav">Low Tom Tom 4</option>
+                <option value="MA/MA.wav">Maracas</option>
+                <option value="MC/MC00.wav">Mid Conga 1</option>
+                <option value="MC/MC10.wav">Mid Conga 2</option>
+                <option value="MC/MC25.wav">Mid Conga 3</option>
+                <option value="MC/MC50.wav">Mid Conga 4</option>
+                <option value="MT/MT00.wav">Mid Tom Tom 1</option>
+                <option value="MT/MT10.wav">Mid Tom Tom 2</option>
+                <option value="MT/MT25.wav">Mid Tom Tom 3</option>
+                <option value="MT/MT50.wav">Mid Tom Tom 4</option>
+                <option value="OH/OH00.wav">Open High Hat 1</option>
+                <option value="OH/OH10.wav">Open High Hat 2</option>
+                <option value="OH/OH25.wav">Open High Hat 3</option>
+                <option value="OH/OH50.wav">Open High Hat 4</option>
+                <option value="RS/RS.wav">Rim Shot</option>
+                <option value="SD/SD0000.wav">Snare Drum 1</option>
+                <option value="SD/SD0010.wav">Snare Drum 2</option>
+                <option value="SD/SD0025.wav">Snare Drum 3</option>
+                <option value="SD/SD0050.wav">Snare Drum 4</option>
               </select>
-              <button id="play-left-toe">Preview Left Toe</button>
+              <button id="play-left-toe">Preview</button>
             </div>
             <div class="input-group">
-              <label for="left-heel">Left Heel</label>
+              <label for="left-heel">Heel</label>
               <select id="left-heel">
-                <option>Bass Drum 0000</option>
-                <option>Bass Drum 0001</option>
-                <option>Bass Drum 0002</option>
-                <option>Bass Drum 0003</option>
+                <option value="BD/BD0000.wav">Bass Drum 1</option>
+                <option value="BD/BD0010.wav">Bass Drum 2</option>
+                <option value="BD/BD0025.wav">Bass Drum 3</option>
+                <option value="BD/BD0050.wav">Bass Drum 4</option>
+                <option value="CB/CB.wav">Cowbell</option>
+                <option value="CH/CH.wav">Closed High Hat</option>
+                <option value="CL/CL.wav">Clave</option>
+                <option value="CP/CP.wav">Clap</option>
+                <option value="CY/CY0000.wav">Cymbal 1</option>
+                <option value="CY/CY0010.wav">Cymbal 2</option>
+                <option value="CY/CY0025.wav">Cymbal 3</option>
+                <option value="CY/CY0050.wav">Cymbal 4</option>
+                <option value="HC/HC00.wav">High Conga 1</option>
+                <option value="HC/HC10.wav">High Conga 2</option>
+                <option value="HC/HC25.wav">High Conga 3</option>
+                <option value="HC/HC50.wav">High Conga 4</option>
+                <option value="HT/HT00.wav">High Tom Tom 1</option>
+                <option value="HT/HT10.wav">High Tom Tom 2</option>
+                <option value="HT/HT25.wav">High Tom Tom 3</option>
+                <option value="HT/HT50.wav">High Tom Tom 4</option>
+                <option value="LC/LC00.wav">Low Conga 1</option>
+                <option value="LC/LC10.wav">Low Conga 2</option>
+                <option value="LC/LC25.wav">Low Conga 3</option>
+                <option value="LC/LC50.wav">Low Conga 4</option>
+                <option value="LT/LT00.wav">Low Tom Tom 1</option>
+                <option value="LT/LT10.wav">Low Tom Tom 2</option>
+                <option value="LT/LT25.wav">Low Tom Tom 3</option>
+                <option value="LT/LT50.wav">Low Tom Tom 4</option>
+                <option value="MA/MA.wav">Maracas</option>
+                <option value="MC/MC00.wav">Mid Conga 1</option>
+                <option value="MC/MC10.wav">Mid Conga 2</option>
+                <option value="MC/MC25.wav">Mid Conga 3</option>
+                <option value="MC/MC50.wav">Mid Conga 4</option>
+                <option value="MT/MT00.wav">Mid Tom Tom 1</option>
+                <option value="MT/MT10.wav">Mid Tom Tom 2</option>
+                <option value="MT/MT25.wav">Mid Tom Tom 3</option>
+                <option value="MT/MT50.wav">Mid Tom Tom 4</option>
+                <option value="OH/OH00.wav">Open High Hat 1</option>
+                <option value="OH/OH10.wav">Open High Hat 2</option>
+                <option value="OH/OH25.wav">Open High Hat 3</option>
+                <option value="OH/OH50.wav">Open High Hat 4</option>
+                <option value="RS/RS.wav">Rim Shot</option>
+                <option value="SD/SD0000.wav">Snare Drum 1</option>
+                <option value="SD/SD0010.wav">Snare Drum 2</option>
+                <option value="SD/SD0025.wav">Snare Drum 3</option>
+                <option value="SD/SD0050.wav">Snare Drum 4</option>
               </select>
-              <button id="play-left-heel">Preview Left Heel</button>
+              <button id="play-left-heel">Preview</button>
             </div>
           </div>
           <div class="right side">
             <h2>RIGHT</h2>
+            <hr>
             <div class="input-group">
-              <label for="right-toe">Right Toe</label>
+              <label for="right-toe">Toe</label>
               <select id="right-toe">
-                <option>Open Hat 00</option>
-                <option>Open Hat 10</option>
-                <option>Open Hat 25</option>
-                <option>Open Hat 50</option>
-                <option>Open Hat 70</option>
+                <option value="BD/BD0000.wav">Bass Drum 1</option>
+                <option value="BD/BD0010.wav">Bass Drum 2</option>
+                <option value="BD/BD0025.wav">Bass Drum 3</option>
+                <option value="BD/BD0050.wav">Bass Drum 4</option>
+                <option value="CB/CB.wav">Cowbell</option>
+                <option value="CH/CH.wav">Closed High Hat</option>
+                <option value="CL/CL.wav">Clave</option>
+                <option value="CP/CP.wav">Clap</option>
+                <option value="CY/CY0000.wav">Cymbal 1</option>
+                <option value="CY/CY0010.wav">Cymbal 2</option>
+                <option value="CY/CY0025.wav">Cymbal 3</option>
+                <option value="CY/CY0050.wav">Cymbal 4</option>
+                <option value="HC/HC00.wav">High Conga 1</option>
+                <option value="HC/HC10.wav">High Conga 2</option>
+                <option value="HC/HC25.wav">High Conga 3</option>
+                <option value="HC/HC50.wav">High Conga 4</option>
+                <option value="HT/HT00.wav">High Tom Tom 1</option>
+                <option value="HT/HT10.wav">High Tom Tom 2</option>
+                <option value="HT/HT25.wav">High Tom Tom 3</option>
+                <option value="HT/HT50.wav">High Tom Tom 4</option>
+                <option value="LC/LC00.wav">Low Conga 1</option>
+                <option value="LC/LC10.wav">Low Conga 2</option>
+                <option value="LC/LC25.wav">Low Conga 3</option>
+                <option value="LC/LC50.wav">Low Conga 4</option>
+                <option value="LT/LT00.wav">Low Tom Tom 1</option>
+                <option value="LT/LT10.wav">Low Tom Tom 2</option>
+                <option value="LT/LT25.wav">Low Tom Tom 3</option>
+                <option value="LT/LT50.wav">Low Tom Tom 4</option>
+                <option value="MA/MA.wav">Maracas</option>
+                <option value="MC/MC00.wav">Mid Conga 1</option>
+                <option value="MC/MC10.wav">Mid Conga 2</option>
+                <option value="MC/MC25.wav">Mid Conga 3</option>
+                <option value="MC/MC50.wav">Mid Conga 4</option>
+                <option value="MT/MT00.wav">Mid Tom Tom 1</option>
+                <option value="MT/MT10.wav">Mid Tom Tom 2</option>
+                <option value="MT/MT25.wav">Mid Tom Tom 3</option>
+                <option value="MT/MT50.wav">Mid Tom Tom 4</option>
+                <option value="OH/OH00.wav">Open High Hat 1</option>
+                <option value="OH/OH10.wav">Open High Hat 2</option>
+                <option value="OH/OH25.wav">Open High Hat 3</option>
+                <option value="OH/OH50.wav">Open High Hat 4</option>
+                <option value="RS/RS.wav">Rim Shot</option>
+                <option value="SD/SD0000.wav">Snare Drum 1</option>
+                <option value="SD/SD0010.wav">Snare Drum 2</option>
+                <option value="SD/SD0025.wav">Snare Drum 3</option>
+                <option value="SD/SD0050.wav">Snare Drum 4</option>
               </select>
-              <button id="play-right-toe">Preview Right Toe</button>
+              <button id="play-right-toe">Preview</button>
             </div>
             <div class="input-group">
-              <label for="right-heel">Right Heel</label>
+              <label for="right-heel">Heel</label>
               <select id="right-heel">
-                <option value="CH/CH.wav">Closed Hat</option>
-                <option value="/CP/CP.wav">Clap</option>
-                <option>Cowbell</option>
-                <option>YEaaaaaahhhhh</option>
+                <option value="BD/BD0000.wav">Bass Drum 1</option>
+                <option value="BD/BD0010.wav">Bass Drum 2</option>
+                <option value="BD/BD0025.wav">Bass Drum 3</option>
+                <option value="BD/BD0050.wav">Bass Drum 4</option>
+                <option value="CB/CB.wav">Cowbell</option>
+                <option value="CH/CH.wav">Closed High Hat</option>
+                <option value="CL/CL.wav">Clave</option>
+                <option value="CP/CP.wav">Clap</option>
+                <option value="CY/CY0000.wav">Cymbal 1</option>
+                <option value="CY/CY0010.wav">Cymbal 2</option>
+                <option value="CY/CY0025.wav">Cymbal 3</option>
+                <option value="CY/CY0050.wav">Cymbal 4</option>
+                <option value="HC/HC00.wav">High Conga 1</option>
+                <option value="HC/HC10.wav">High Conga 2</option>
+                <option value="HC/HC25.wav">High Conga 3</option>
+                <option value="HC/HC50.wav">High Conga 4</option>
+                <option value="HT/HT00.wav">High Tom Tom 1</option>
+                <option value="HT/HT10.wav">High Tom Tom 2</option>
+                <option value="HT/HT25.wav">High Tom Tom 3</option>
+                <option value="HT/HT50.wav">High Tom Tom 4</option>
+                <option value="LC/LC00.wav">Low Conga 1</option>
+                <option value="LC/LC10.wav">Low Conga 2</option>
+                <option value="LC/LC25.wav">Low Conga 3</option>
+                <option value="LC/LC50.wav">Low Conga 4</option>
+                <option value="LT/LT00.wav">Low Tom Tom 1</option>
+                <option value="LT/LT10.wav">Low Tom Tom 2</option>
+                <option value="LT/LT25.wav">Low Tom Tom 3</option>
+                <option value="LT/LT50.wav">Low Tom Tom 4</option>
+                <option value="MA/MA.wav">Maracas</option>
+                <option value="MC/MC00.wav">Mid Conga 1</option>
+                <option value="MC/MC10.wav">Mid Conga 2</option>
+                <option value="MC/MC25.wav">Mid Conga 3</option>
+                <option value="MC/MC50.wav">Mid Conga 4</option>
+                <option value="MT/MT00.wav">Mid Tom Tom 1</option>
+                <option value="MT/MT10.wav">Mid Tom Tom 2</option>
+                <option value="MT/MT25.wav">Mid Tom Tom 3</option>
+                <option value="MT/MT50.wav">Mid Tom Tom 4</option>
+                <option value="OH/OH00.wav">Open High Hat 1</option>
+                <option value="OH/OH10.wav">Open High Hat 2</option>
+                <option value="OH/OH25.wav">Open High Hat 3</option>
+                <option value="OH/OH50.wav">Open High Hat 4</option>
+                <option value="RS/RS.wav">Rim Shot</option>
+                <option value="SD/SD0000.wav">Snare Drum 1</option>
+                <option value="SD/SD0010.wav">Snare Drum 2</option>
+                <option value="SD/SD0025.wav">Snare Drum 3</option>
+                <option value="SD/SD0050.wav">Snare Drum 4</option>
               </select>
-              <button id="play-right-heel">Preview Right Heel</button>
+              <button id="play-right-heel">Preview</button>
             </div>
           </div>
         </div>
