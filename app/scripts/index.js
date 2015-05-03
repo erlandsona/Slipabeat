@@ -99,6 +99,14 @@ preset.onchange = function() {
   }
 }
 
+//function whichSensor(serialData) {
+//var serialData = {"HEEL_LEFT": 0, "HEEL_RIGHT": 1, "TOE_LEFT": 0, "TOE_RIGHT": 0};
+  //if (serialData.HEEL_LEFT === 0) {
+    
+  //}
+//}
+//whichSensor();
+
 //onLeftToeTap = function() {
   //leftToeSound.load();
   //leftToeSound.play();
