@@ -25,16 +25,16 @@ var leftHeelSelect = document.querySelector("#left-heel");
 var rightHeelSelect = document.querySelector("#right-heel");
 
 leftToeSelect.onchange = function() {
-  leftToeSound.src = "TR808WAV/" + leftToeSelect.value;
+  leftToeSound.src = "assets/TR808WAV/" + leftToeSelect.value;
 }
 rightToeSelect.onchange = function() {
-  rightToeSound.src = "TR808WAV/" + rightToeSelect.value;
+  rightToeSound.src = "assets/TR808WAV/" + rightToeSelect.value;
 }
 leftHeelSelect.onchange = function() {
-  leftHeelSound.src = "TR808WAV/" + leftHeelSelect.value;
+  leftHeelSound.src = "assets/TR808WAV/" + leftHeelSelect.value;
 }
 rightHeelSelect.onchange = function() {
-  rightHeelSound.src = "TR808WAV/" + rightHeelSelect.value;
+  rightHeelSound.src = "assets/TR808WAV/" + rightHeelSelect.value;
 }
 
 document.querySelector("#play-left-toe").onclick = function() {
