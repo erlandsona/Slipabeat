@@ -30,6 +30,11 @@ main {
   border-radius: 2px;
   padding: 40px 20px;
   text-align: left;
+  min-width: 343px;
+}
+
+.side {
+  min-width: 330px;
 }
 
 h1 {
@@ -56,6 +61,7 @@ h2 {
 #top-row {
   justify-content: flex-start;
   padding-left: 22px;
+  padding-bottom: 15px;
 }
 
 .input-group {
@@ -83,6 +89,10 @@ button {
 button:hover {
   background: #F1F500;
   text-decoration: none;
+}
+
+button:focus, select:focus {
+  outline: 0;
 }
 
 label {
@@ -127,3 +137,44 @@ select:hover {
   background: #40B643;
   margin-top: 7px;
 }
+
+@media screen and (max-width: 1225px) {
+
+  #top-row {
+    justify-content: center;
+  }
+
+  .side {
+    width: 330px;
+    margin: 0 auto;
+  }
+
+  #bottom-row {
+    flex-direction: column;
+  }
+
+  #bottom-row .right {
+    margin-top: 25px;
+  }
+}
+
+/*@media screen and (max-width: 508px) {*/
+  /*header {*/
+    /*background-image: url("assets/images/slipabeat-icon.png");*/
+    /*background-repeat: no-repeat;*/
+/*width: auto; [>or your image's width<]*/
+/*height: 75px; [>or your image's height<]*/
+/*margin: 0;*/
+/*padding: 0;*/
+  /*}*/
+  /*header > img {*/
+    /*display: none;*/
+  /*}*/
+/*}*/
+
+/*@media screen and (max-width: 330px) {*/
+  /*.side, .controller1 {*/
+    /*width: 100%;*/
+    /*min-width: initial;*/
+  /*}*/
+/*}*/
