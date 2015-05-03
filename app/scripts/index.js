@@ -40,6 +40,26 @@ document.querySelector('#play-right-heel').onclick = function() {
   rightHeelSound.play();
 };
 
+document.body.onkeypress = function(event) {
+  if (event.charCode === 113) {
+    leftToeSound.load();
+    leftToeSound.play();
+  } else if (event.charCode === 97) {
+    leftHeelSound.load();
+    leftHeelSound.play();
+  } else if (event.charCode === 112) {
+    rightToeSound.load();
+    rightToeSound.play();
+  } else if (event.charCode === 108) {
+    rightHeelSound.load();
+    rightHeelSound.play();
+  } else {
+  }
+}
+
+
+
+
 //onLeftToeTap = function() {
   //leftToeSound.load();
   //leftToeSound.play();
