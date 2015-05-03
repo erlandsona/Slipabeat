@@ -109,7 +109,7 @@ hr {
 }
 
 .left {
-  margin-right: 10px;
+  margin-right: 25px;
 }
 
 select {
@@ -158,19 +158,19 @@ select:hover {
   }
 }
 
-/*@media screen and (max-width: 508px) {*/
-  /*header {*/
-    /*background-image: url("assets/images/slipabeat-icon.png");*/
-    /*background-repeat: no-repeat;*/
-/*width: auto; [>or your image's width<]*/
-/*height: 75px; [>or your image's height<]*/
-/*margin: 0;*/
-/*padding: 0;*/
-  /*}*/
-  /*header > img {*/
-    /*display: none;*/
-  /*}*/
-/*}*/
+@media screen and (max-width: 508px) {
+  header {
+    background-image: url("assets/images/slipabeat-icon.png");
+    background-repeat: no-repeat;
+    width: auto;
+    height: 75px;
+    margin: 0;
+    padding: 0;
+  }
+  header > img {
+    display: none;
+  }
+}
 
 /*@media screen and (max-width: 330px) {*/
   /*.side, .controller1 {*/
