@@ -29,6 +29,19 @@ function onReceiveCallback (arrayBuffer) {
     console.log(str);
     serialObj = JSON.parse(str.replace(/'/g, ''));
     str = '';
+    if (serialObj.TOE_LEFT === 1) {
+      leftToeSound.load();
+      leftToeSound.play();
+    } else if (serialObj.TOE_RIGHT === 1) {
+      rightToeSound.load();
+      rightToeSound.play();
+    } else if (serialObj.HEEL_LEFT === 1) {
+      leftHeelSound.load();
+      leftHeelSound.play();
+    } else if (serialObj.HEEL_RIGHT === 1) {
+      rightHeelSound.load();
+      rightHeelSound.play();
+    }
   }
   var u8view = new Uint8Array(arrayBuffer.data);
   for (var i = 0, len = u8view.length; i < len; i++) {
@@ -98,8 +111,8 @@ document.body.onkeypress = function(event) {
     rightHeelSound.load();
     rightHeelSound.play();
   } else {
-  }
-}
+  };
+};
 
 var preset = document.querySelector("#top-row select");
 preset.onchange = function() {
@@ -140,22 +153,5 @@ preset.onchange = function() {
     leftHeelSelect.value = 'samples/c_bass.wav';
     rightHeelSelect.value = 'samples/e_bass.wav';
   } else {
-  }
-}
-
-//onLeftToeTap = function() {
-  //leftToeSound.load();
-  //leftToeSound.play();
-//};
-//onRightToeTap = function() {
-  //rightToeSound.load();
-  //rightToeSound.play();
-//};
-//onLeftHeelTap = function() {
-  //leftHeelSound.load();
-  //leftHeelSound.play();
-//};
-//onRightHeelTap = function() {
-  //rightHeelSound.load();
-  //rightHeelSound.play();
-//};
+  };
+};
