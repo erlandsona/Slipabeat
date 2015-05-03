@@ -57,8 +57,47 @@ document.body.onkeypress = function(event) {
   }
 }
 
-
-
+var preset = document.querySelector("#top-row select");
+preset.onchange = function() {
+  if (preset.value === "Preset 1") {
+    leftToeSound.src = 'assets/TR808WAV/samples/d_bass.wav';
+    rightToeSound.src = 'assets/TR808WAV/samples/g_bass.wav';
+    leftHeelSound.src = 'assets/TR808WAV/samples/c_bass.wav';
+    rightHeelSound.src = 'assets/TR808WAV/samples/e_bass.wav';
+    leftToeSelect.value = 'samples/d_bass.wav';
+    rightToeSelect.value = 'samples/g_bass.wav';
+    leftHeelSelect.value = 'samples/c_bass.wav';
+    rightHeelSelect.value = 'samples/e_bass.wav';
+  } else if (preset.value === "Preset 2") {
+    leftToeSound.src = 'assets/TR808WAV/';
+    rightToeSound.src = 'assets/TR808WAV/';
+    leftHeelSound.src = 'assets/TR808WAV/';
+    rightHeelSound.src = 'assets/TR808WAV/';
+    leftToeSelect.value = 'samples/d_bass.wav';
+    rightToeSelect.value = 'samples/g_bass.wav';
+    leftHeelSelect.value = 'samples/c_bass.wav';
+    rightHeelSelect.value = 'samples/e_bass.wav';
+  } else if (preset.value === "Preset 3") {
+    leftToeSound.src = 'assets/TR808WAV/';
+    rightToeSound.src = 'assets/TR808WAV/';
+    leftHeelSound.src = 'assets/TR808WAV/';
+    rightHeelSound.src = 'assets/TR808WAV/';
+    leftToeSelect.value = 'samples/d_bass.wav';
+    rightToeSelect.value = 'samples/g_bass.wav';
+    leftHeelSelect.value = 'samples/c_bass.wav';
+    rightHeelSelect.value = 'samples/e_bass.wav';
+  } else if (preset.value === "Preset 4") {
+    leftToeSound.src = 'assets/TR808WAV/';
+    rightToeSound.src = 'assets/TR808WAV/';
+    leftHeelSound.src = 'assets/TR808WAV/';
+    rightHeelSound.src = 'assets/TR808WAV/';
+    leftToeSelect.value = 'samples/d_bass.wav';
+    rightToeSelect.value = 'samples/g_bass.wav';
+    leftHeelSelect.value = 'samples/c_bass.wav';
+    rightHeelSelect.value = 'samples/e_bass.wav';
+  } else {
+  }
+}
 
 //onLeftToeTap = function() {
   //leftToeSound.load();
