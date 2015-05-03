@@ -1,8 +1,8 @@
 #define inputs 4
 
-int THRESHOLD = 1023;//IMPORTANT FOR SENSITIVITY, also maybe possible to turn into macro?
+int THRESHOLD = 200;//IMPORTANT FOR SENSITIVITY, also maybe possible to turn into macro?
 long lastDebounceTime = 0;  // the last time the output pin was toggled
-long debounceDelay = 1000;    // the debounce time; increase if the output flickers, currently 1000 msecs or 1 second, work with debugging
+long debounceDelay = 200;    // the debounce time; increase if the output flickers, currently 1000 msecs or 1 second, work with debugging
 bool hit;
 int currentState[inputs];
 int lastState[inputs]= {LOW,LOW,LOW,LOW};
@@ -17,9 +17,10 @@ void setup() {
 }
 void loop() {
   hit= false;
-//  int currReading[inputs]= {0,0,0,0};
+  int currReading[inputs]= {0,0,0,0};
 String jsonString="\"{" ;
 for (int i=0;i<inputs;i++){
+currReading[i]=analogRead(i);
   String key;
    switch(i){
      case 0:
@@ -67,15 +68,15 @@ for (int i=0;i<inputs;i++){
   jsonString = jsonString +", "; //every other item
 }
 
-}//endfor
+}//endfor 
 
   char jsonOut[100]="";// a buffer, required for serial write, 100 is an arbitrarily large number
   if(hit==true){ // if the signal was previously low, recieved a hit and the debouncing limiter was not reset
     jsonString.toCharArray(jsonOut, jsonString.length()); //string to char array function
    Serial.write(jsonOut); //self documenting, arduino monitor doesn't recognise /n but println does
-  /*for (int i=0;i<inputs;i++){
+  for (int i=0;i<inputs;i++){
   Serial.println(currReading[i]);//debugging purposes
-  }*/
+  }
   //Serial.println(jsonString); //debugging purposes
 }
 delay(100);  //logically should be able to remove, but DO NOT REMOVE UNLESS CERTAIN
