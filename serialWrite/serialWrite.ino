@@ -53,8 +53,9 @@ for (int i=0;i<inputs;i++){
       hit= true;
      jsonString= jsonString + "\'" + key + "\': 1" ;
      lastState[i]=HIGH; 
+     lastDebounceTime = millis();
     }
-   else if((byte)analogRead(i)< 50){ // value not read
+   else if((byte)analogRead(i)< 50){ // value not read and has been cleaned
    jsonString= jsonString +  "\'" + key + "\': 0" ;
        lastState[i]=LOW;      
    }//end else
@@ -62,6 +63,9 @@ for (int i=0;i<inputs;i++){
      jsonString= jsonString +  "\'" + key + "\': 0" ;
    }
   }
+   else{
+     jsonString= jsonString +  "\'" + key + "\': 0" ;
+   }
  
  
  if(i == inputs-1){
