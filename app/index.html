@@ -19,53 +19,61 @@
     <div class="controller1">
       <div class="row">
         <h1>Controller 1</h1>
-        <select disabled>
+      <!--  <select disabled>
           <option>Preset 1</option>
           <option>Preset 2</option>
           <option>Preset 3</option>
           <option>Preset 4</option>
-        </select>
+        </select>-->
       </div>
       <div class="row">
-        <h2>LEFT</h2>
-        <h2>RIGHT</h2>
-      </div>
-      <div class="row">
-        <label for="left-toe">Toe</label>
-        <select id="left-toe">
-          <option value="SD/SD0000.wav">Snare Drum 0000</option>
-          <option value="SD/SD0010.wav">Snare Drum 0010</option>
-          <option value="SD/SD0025.wav">Snare Drum 0025</option>
-          <option value="SD/SD0050.wav">Snare Drum 0050</option>
-        </select>
-        <button id="play-left-toe">Preview Left Toe</button>
-        <label for="right-toe">Toe</label>
-        <select id="right-toe">
-          <option>Open Hat 00</option>
-          <option>Open Hat 10</option>
-          <option>Open Hat 25</option>
-          <option>Open Hat 50</option>
-          <option>Open Hat 70</option>
-        </select>
-        <button id="play-right-toe">Preview Right Toe</button>
-      </div>
-      <div class="row">
-        <label for="left-heel">Heel</label>
-        <select id="left-heel">
-          <option>Bass Drum 0000</option>
-          <option>Bass Drum 0001</option>
-          <option>Bass Drum 0002</option>
-          <option>Bass Drum 0003</option>
-        </select>
-        <button id="play-left-heel">Preview Left Heel</button>
-        <label for="right-heel">Heel</label>
-        <select id="right-heel">
-          <option value="CH/CH.wav">Closed Hat</option>
-          <option value="/CP/CP.wav">Clap</option>
-          <option>Cowbell</option>
-          <option>YEaaaaaahhhhh</option>
-        </select>
-        <button id="play-right-heel">Preview Right Heel</button>
+        <div class="left side">
+          <h2>LEFT</h2>
+          <div class="input-group">
+            <label for="left-toe">Left Toe</label>
+            <select id="left-toe">
+              <option value="SD/SD0000.wav">Snare Drum 0000</option>
+              <option value="SD/SD0010.wav">Snare Drum 0010</option>
+              <option value="SD/SD0025.wav">Snare Drum 0025</option>
+              <option value="SD/SD0050.wav">Snare Drum 0050</option>
+            </select>
+            <button id="play-left-toe">Preview Left Toe</button>
+          </div>
+          <div class="input-group">
+            <label for="left-heel">Left Heel</label>
+            <select id="left-heel">
+              <option>Bass Drum 0000</option>
+              <option>Bass Drum 0001</option>
+              <option>Bass Drum 0002</option>
+              <option>Bass Drum 0003</option>
+            </select>
+            <button id="play-left-heel">Preview Left Heel</button>
+          </div>
+        </div>
+        <div class="right side">
+          <h2>RIGHT</h2>
+          <div class="input-group">
+            <label for="right-toe">Right Toe</label>
+            <select id="right-toe">
+              <option>Open Hat 00</option>
+              <option>Open Hat 10</option>
+              <option>Open Hat 25</option>
+              <option>Open Hat 50</option>
+              <option>Open Hat 70</option>
+            </select>
+            <button id="play-right-toe">Preview Right Toe</button>
+          </div>
+          <div class="input-group">
+            <label for="right-heel">Right Heel</label>
+            <select id="right-heel">
+            <option value="CH/CH.wav">Closed Hat</option>
+            <option value="/CP/CP.wav">Clap</option>
+            <option>Cowbell</option>
+            <option>YEaaaaaahhhhh</option>
+          </select>
+            <button id="play-right-heel">Preview Right Heel</button>
+          </div>  
+        </div>
       </div>
       <audio id="left-toe-sound" src="TR808WAV/SD/SD0000.wav" type="audio/wav"></audio>
       <audio id="left-heel-sound" src="TR808WAV/SD/SD0000.wav" type="audio/wav"></audio>
@@ -82,3 +90,4 @@
         <!-- endbuild -->
     </body>
 </html>
+
