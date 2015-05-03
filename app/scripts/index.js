@@ -84,5 +84,78 @@ document.querySelector('#play-right-heel').onclick = function() {
   rightHeelSound.play();
 };
 
+document.body.onkeypress = function(event) {
+  if (event.charCode === 113) {
+    leftToeSound.load();
+    leftToeSound.play();
+  } else if (event.charCode === 97) {
+    leftHeelSound.load();
+    leftHeelSound.play();
+  } else if (event.charCode === 112) {
+    rightToeSound.load();
+    rightToeSound.play();
+  } else if (event.charCode === 108) {
+    rightHeelSound.load();
+    rightHeelSound.play();
+  } else {
+  }
+}
 
+var preset = document.querySelector("#top-row select");
+preset.onchange = function() {
+  if (preset.value === "Preset 1") {
+    leftToeSound.src = 'assets/TR808WAV/samples/d_bass.wav';
+    rightToeSound.src = 'assets/TR808WAV/samples/g_bass.wav';
+    leftHeelSound.src = 'assets/TR808WAV/samples/c_bass.wav';
+    rightHeelSound.src = 'assets/TR808WAV/samples/e_bass.wav';
+    leftToeSelect.value = 'samples/d_bass.wav';
+    rightToeSelect.value = 'samples/g_bass.wav';
+    leftHeelSelect.value = 'samples/c_bass.wav';
+    rightHeelSelect.value = 'samples/e_bass.wav';
+  } else if (preset.value === "Preset 2") {
+    leftToeSound.src = 'assets/TR808WAV/samples/rim_shot.wav';
+    rightToeSound.src = 'assets/TR808WAV/samples/rim_shot.wav';
+    leftHeelSound.src = 'assets/TR808WAV/samples/bass_drum.wav';
+    rightHeelSound.src = 'assets/TR808WAV/samples/bass_drum.wav';
+    leftToeSelect.value = 'samples/rim_shot.wav';
+    rightToeSelect.value = 'samples/rim_shot.wav';
+    leftHeelSelect.value = 'samples/bass_drum.wav';
+    rightHeelSelect.value = 'samples/bass_drum.wav';
+  } else if (preset.value === "Preset 3") {
+    leftToeSound.src = 'assets/TR808WAV/samples/Crash-Cymbal-2.wav';
+    rightToeSound.src = 'assets/TR808WAV/samples/Crash-Cymbal-3.wav';
+    leftHeelSound.src = 'assets/TR808WAV/samples/Crash-Cymbal-3.wav';
+    rightHeelSound.src = 'assets/TR808WAV/samples/Crash-Cymbal-2.wav';
+    leftToeSelect.value = 'samples/Crash-Cymbal-2.wav';
+    rightToeSelect.value = 'samples/Crash-Cymbal-3.wav';
+    leftHeelSelect.value = 'samples/Crash-Cymbal-3.wav';
+    rightHeelSelect.value = 'samples/Crash-Cymbal-2.wav';
+  } else if (preset.value === "Preset 4") {
+    leftToeSound.src = 'assets/TR808WAV/';
+    rightToeSound.src = 'assets/TR808WAV/';
+    leftHeelSound.src = 'assets/TR808WAV/';
+    rightHeelSound.src = 'assets/TR808WAV/';
+    leftToeSelect.value = 'samples/d_bass.wav';
+    rightToeSelect.value = 'samples/g_bass.wav';
+    leftHeelSelect.value = 'samples/c_bass.wav';
+    rightHeelSelect.value = 'samples/e_bass.wav';
+  } else {
+  }
+}
 
+//onLeftToeTap = function() {
+  //leftToeSound.load();
+  //leftToeSound.play();
+//};
+//onRightToeTap = function() {
+  //rightToeSound.load();
+  //rightToeSound.play();
+//};
+//onLeftHeelTap = function() {
+  //leftHeelSound.load();
+  //leftHeelSound.play();
+//};
+//onRightHeelTap = function() {
+  //rightHeelSound.load();
+  //rightHeelSound.play();
+//};
