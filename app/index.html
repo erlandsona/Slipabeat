@@ -32,29 +32,32 @@
       </div>
       <div class="row">
         <label for="left-toe">Toe</label>
-        <select id="left-toe">
-          <option>Snare Drum 0000</option>
-          <option>Snare Drum 0001</option>
-          <option>Snare Drum 0002</option>
-          <option>Snare Drum 0003</option>
+        <select onchange="setLeftToe()" id="left-toe">
+          <option value="SD/SD0000.wav">Snare Drum 0000</option>
+          <option value="SD/SD0010.wav">Snare Drum 0010</option>
+          <option value="SD/SD0025.wav">Snare Drum 0025</option>
+          <option value="SD/SD0050.wav">Snare Drum 0050</option>
         </select>
+        <button onclick="playLeftToe()" id="play-left-toe">Preview Left Toe</button>
         <label for="right-toe">Toe</label>
-        <select id="right-toe">
+        <select onchange="setRightToe()" id="right-toe">
           <option>Open Hat 00</option>
           <option>Open Hat 10</option>
           <option>Open Hat 25</option>
           <option>Open Hat 50</option>
           <option>Open Hat 70</option>
         </select>
+        <button onclick="playRightToe()" id="play-right-toe">Preview Right Toe</button>
       </div>
       <div class="row">
         <label for="left-heel">Heel</label>
-        <select id="left-heel">
+        <select onchange="setLeftHeel()" id="left-heel">
           <option>Bass Drum 0000</option>
           <option>Bass Drum 0001</option>
           <option>Bass Drum 0002</option>
           <option>Bass Drum 0003</option>
         </select>
+        <button onclick="playLeftHeel()" id="play-left-heel">Preview Left Heel</button>
         <label for="right-heel">Heel</label>
         <select onchange="setRightHeel()" id="right-heel">
           <option value="CH/CH.wav">Closed Hat</option>
@@ -62,11 +65,12 @@
           <option>Cowbell</option>
           <option>YEaaaaaahhhhh</option>
         </select>
+        <button onclick="playRightHeel()" id="play-right-heel">Preview Right Heel</button>
       </div>
-      <audio id="left-toe-sound" type = "audio/wav" controls /></audio>
-      <audio id="left-heel-sound" type = "audio/wav" controls /></audio>
-      <audio id="right-toe-sound" type = "audio/wav" controls /></audio>
-      <audio id="right-heel-sound" type = "audio/wav" controls /></audio>
+      <audio id="left-toe-sound" src="TR808WAV/SD/SD0000.wav" type="audio/wav" />
+      <audio id="left-heel-sound" src="TR808WAV/SD/SD0000.wav" type="audio/wav" />
+      <audio id="right-toe-sound" src="TR808WAV/SD/SD0000.wav" type="audio/wav" />
+      <audio id="right-heel-sound" src="TR808WAV/SD/SD0000.wav" type="audio/wav" />
     </div>
 
 <!--
